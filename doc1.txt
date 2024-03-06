@@ -1,0 +1,2 @@
+Este é um exemplo de documento que nasceu na branch main
+Timestamp: 06/03/2024 - 14:31
