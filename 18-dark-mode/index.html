@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../assets/css/output.css">
+
+  <!-- <script>
+    tailwind.config = {
+      darkMode: 'class',
+    }
+  </script> -->
+
+  <style>
+    .toggle-checkbox:checked {
+      right: 0;
+      border-color: #68d391;
+    }
+
+    .toggle-checkbox:checked+.toggle-label {
+      background-color: #68d391;
+    }
+  </style>
+  <title>Dark Mode</title>
+
+</head>
+
+<body class="bg-slate-100 dark:bg-slate-900">
+  <!-- By default, you can have your project use whatever mode your OS is using. You can use "dark:{class}". You can also set your config to use a class instead of using your OS mode -->
+
+
+  <div class="fixed top-0 left-0 w-full z-50 bg-gray-300  dark:bg-[#171717]">
+    <nav class="max-w-6xl mx-auto px-4 ">
+      <div class="flex justify-between items-center py-3">
+        <div class="flex-shrink-0">
+          <a href="../index.html"> <img src="../assets/img/logo-dark.png" alt="logo"
+              class="w-32 object-cover dark:block hidden"></a>
+          <a href="../index.html"> <img src="../assets/img/logo.png" alt="logo"
+              class="w-32 object-cover dark:hidden block"></a>
+        </div>
+        <div class="">
+          <ul class="flex items-center space-x-4 text-sm mr-3">
+            <li><a class="text-menu" href="../index.html">Home</a></li>
+            <li><a class="text-menu" href="#">About</a></li>
+            <li><a class="text-menu" href="#">Services</a></li>
+            <li><a class="text-menu" href="#">Contact</a></li>
+            <li><a class="text-menu" href="#">sobre</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div
+    class="container mx-auto mt-20 bg-white dark:bg-[#1e293bff] rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
+    <h3 class="text-slate-900 dark:text-white text-base font-medium tracking-tight">
+      Writes Upside-Down
+    </h3>
+    <p class="text-slate-500 dark:text-slate-400 mt-2 text-sm">
+      The Zero Gravity Pen can be used to write in any orientation, including
+      upside-down. It even works in outer space.
+      <span class="text-slate-900 dark:text-white">Vamos testar algum tipo de design</span>
+    </p>
+  </div>
+
+  <div class="relative inline-block w-10 mr-2 ml-6 mt-6 align-middle select-none transition duration-200 ease-in">
+    <input type="checkbox" name="toggle" id="toggle" checked
+      class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer" />
+    <label for="toggle" class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"></label>
+  </div>
+
+  <script>
+    document.getElementById('toggle').addEventListener('change', function () {
+      if (this.checked) {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+    })
+  </script>
+
+  <div class="flex max-w-5xl mt-10 mx-auto">
+    <p class="text-slate-500 dark:text-slate-400 text-sm mx-14">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse id eveniet
+      quidem explicabo et molestiae rerum libero rem aperiam ad in fugiat, atque
+      excepturi vel enim, suscipit iure inventore natus provident deserunt?
+      Dolorum nihil fugiat sapiente odio nulla reiciendis qui repudiandae
+      doloremque eos, voluptatem iste tenetur ipsam doloribus aperiam deleniti
+      laboriosam consectetur in debitis quae a similique tempora eum ratione?
+      Consequatur possimus dolor quidem! Iure, laborum doloribus. Recusandae
+      odio, doloremque dolorum inventore, quaerat libero, quasi ad sunt aliquam
+      dolor nihil possimus minima debitis ab perferendis in culpa nesciunt
+      repellat consequuntur provident excepturi. Quod illo sequi sint, neque
+      porro animi, delectus non sapiente amet fugit ea, dolor debitis ipsum ut
+      temporibus officia nisi? Voluptas ex reprehenderit, itaque fugiat cumque
+      quasi vero, non excepturi exercitationem dignissimos qui quis nemo quia
+      delectus mollitia assumenda corrupti, ut incidunt quas ducimus aperiam
+      explicabo minus? Corporis, modi. Unde eos laudantium delectus amet enim
+      blanditiis culpa quasi quaerat, temporibus labore? Unde reprehenderit quod
+      officiis odit animi voluptatibus deleniti aspernatur inventore quam ex
+      saepe ea, laborum aliquam blanditiis odio corrupti aperiam molestiae id
+      placeat qui! Perferendis nisi nesciunt assumenda, quos omnis error itaque
+      laudantium inventore quasi ipsa laboriosam praesentium, minus modi soluta
+      asperiores illum molestiae alias aliquid quia incidunt accusamus eaque
+      quae. Veritatis ea provident aperiam architecto! Impedit sunt blanditiis,
+      molestiae sequi reprehenderit in sapiente quos id! Maiores, similique a
+      harum alias commodi, ullam esse nesciunt aliquam assumenda voluptatibus
+      dolores, aperiam minus ut. Doloribus ipsam at ex quasi mollitia unde totam
+      perferendis nobis obcaecati aperiam doloremque dignissimos dolores harum
+      nam debitis officia, qui cum minus commodi corrupti odit, excepturi esse
+      quibusdam numquam? Quos facilis eius eos error exercitationem. Cum, illo
+      dolore. Accusamus voluptatibus odio vel repellendus eum iste corrupti
+      voluptatem reiciendis molestias dolore, id quis expedita ipsam vero totam
+      fugiat a minus eaque deserunt aspernatur vitae. Ea eveniet quae
+      perspiciatis aliquid expedita optio voluptates reiciendis, molestias cum,
+      obcaecati pariatur officiis blanditiis dignissimos nesciunt! Cum atque
+      alias doloribus nam libero error quibusdam, minus nisi, enim accusantium
+      est unde dolor distinctio esse labore? Iure expedita sed consequatur
+      dolorem totam adipisci modi asperiores architecto dolorum mollitia
+      excepturi numquam id quibusdam vitae itaque distinctio dolore labore et
+      doloremque cumque sint, soluta ullam. Soluta beatae pariatur quas esse
+      iure et nulla, perspiciatis, obcaecati sunt temporibus atque est
+      asperiores, laboriosam odio rem veniam delectus corrupti fugiat fugit
+      dicta? Eveniet modi sit facilis inventore voluptate et laborum
+      consequuntur ad ex, eius possimus vero delectus vitae accusamus recusandae
+      voluptatem cumque iusto at eligendi ut repellat deleniti? Neque ducimus
+      numquam accusamus dicta laboriosam vel quis debitis molestias iure,
+      mollitia facere natus blanditiis officia deserunt amet provident ratione
+      odio sapiente cum sint. Impedit, voluptate distinctio quaerat ratione
+      asperiores voluptatem dignissimos labore maiores saepe ex cum facere
+      numquam quos reiciendis iste rerum quae blanditiis voluptates consequatur,
+      nemo mollitia ipsum hic, esse suscipit? Dolor officia, ducimus
+      reprehenderit iste voluptate qui minima odit a unde quo amet distinctio
+      expedita. Voluptates optio fugiat vel eos quae fuga corporis explicabo
+      magnam voluptatum repudiandae nesciunt odit, minus soluta neque!
+      Distinctio est sunt eligendi blanditiis, sit ut ratione, et consequatur
+      iusto atque sint neque sed, tenetur ullam quo recusandae veniam quisquam
+      hic nostrum deleniti architecto! Voluptate voluptates sint velit, magnam
+      in distinctio. Harum eaque vero voluptate velit suscipit commodi quae est
+      neque expedita iste aspernatur porro modi, animi quo, quisquam, placeat
+      praesentium rem omnis? Nobis, quia dolores, cupiditate hic quibusdam aut
+      officiis maxime laborum tenetur illo quam reiciendis magni obcaecati
+      dolorem explicabo nisi? Incidunt qui praesentium recusandae aliquam,
+      asperiores suscipit deleniti magnam perferendis similique, voluptatum
+      excepturi molestias maiores provident velit eius quis quisquam id iure.
+      Delectus ab molestiae similique, minus vitae repellendus dolorem doloribus
+      aliquam nemo suscipit dicta, at facere nihil. Expedita laborum, officiis
+      neque accusantium laudantium rerum illum temporibus sequi ut modi, libero
+      magni! Esse voluptatem asperiores excepturi fugiat provident doloribus
+      neque consequuntur laboriosam amet voluptates? Veniam quaerat fugiat
+      voluptas exercitationem adipisci. Voluptate, qui repellat totam tenetur a
+      facere assumenda provident ipsum in quis eum atque ipsa quidem omnis,
+      sunt, pariatur optio ullam porro sint illo? Quod debitis eligendi deleniti
+      in ex suscipit optio animi dignissimos eaque quae, accusantium, nobis
+      veniam velit officia. Praesentium sunt aut minus corrupti, qui tempora
+      tenetur mollitia harum, voluptatum quibusdam obcaecati dolorum eum saepe
+      beatae velit magnam, possimus quaerat ut amet. Illum consectetur, eum
+      laboriosam assumenda, saepe iure aliquam nesciunt et cum, quis dolore?
+      Totam numquam consequatur incidunt quod magni perferendis sit delectus
+      tempora animi, ipsum facere natus corporis quam quaerat recusandae cumque,
+      quasi sed fugit, aliquam necessitatibus nesciunt? Sequi reprehenderit
+      molestias magnam fugiat ab perferendis iusto harum et odit sint illum
+      molestiae amet quam quibusdam minima delectus ipsa consequatur,
+      perspiciatis quod necessitatibus veritatis nesciunt, excepturi voluptates
+      ea? Minima repellendus delectus earum fugit obcaecati error eveniet
+      possimus, totam vel voluptates perspiciatis quaerat non modi? Vero culpa
+      laborum, accusantium at consequatur explicabo, labore error debitis illum
+      quibusdam totam mollitia, tempore recusandae sed maiores nihil ex qui
+      dolorem? Facilis beatae fuga sunt aut nesciunt ipsum, similique sapiente,
+      quia non voluptates laborum earum voluptate explicabo atque officiis
+      pariatur consequuntur tenetur. Nobis doloribus odio harum laudantium sed
+      exercitationem atque ratione, laboriosam soluta provident eum itaque, quae
+      voluptas dicta obcaecati, nihil distinctio quos impedit delectus corrupti
+      deserunt! Odit facilis laboriosam veniam reprehenderit eos, maiores animi
+      obcaecati laudantium tempore? Ex ducimus eaque commodi molestiae debitis
+      culpa repellat voluptatem ea deleniti nesciunt unde dolore, earum nihil
+      cum quos laboriosam magni illo iure aperiam quidem itaque! Quod minus nemo
+      recusandae mollitia ipsam qui delectus odio id voluptatem esse natus
+      corrupti fugit obcaecati, voluptate quidem doloremque modi, optio, quam
+      quaerat provident eveniet repellat laborum dolorum sequi. Quos mollitia
+      et, voluptatum pariatur iste nisi velit voluptatem eos! Natus similique
+      possimus ea vel! Magnam adipisci necessitatibus vitae amet iste. Modi
+      omnis repellat molestiae, eum officia iusto perferendis quis numquam harum
+      voluptatum ut iure totam neque assumenda provident? Impedit, officiis
+      laboriosam! Recusandae quo sapiente porro vel minima eum. Commodi totam
+      consequatur neque aperiam doloribus. Odit adipisci repellat ducimus,
+      numquam incidunt iste repellendus officia iusto eligendi voluptatem
+      pariatur, porro facilis reiciendis id tempore. Obcaecati eos assumenda
+      animi et totam aliquam cupiditate ea.
+    </p>
+  </div>
+
+</body>
+
+</html>
+
+<!-- Credit for toggle button style
+https://tailwindcomponents.com/component/toggle-switch
+ -->
