@@ -1,2 +1,3 @@
-esse é o segundo documento inserido
+esse é o segundo documento inserido.
+essa observação poderia ser a correção de um bug.
 timestamp: 06/03/2024 - 14:34
